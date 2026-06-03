@@ -1913,3 +1913,44 @@ if (allIndustriesGrid) {
  
       observer.observe(section);
     })();
+
+
+
+
+    //accordion for restaurant page
+
+
+    (function () {
+      const section = document.querySelector('.restaurant-accordion');
+      if (!section) return;
+ 
+      const items = section.querySelectorAll('.accordion-item');
+ 
+      items.forEach(item => {
+        const trigger = item.querySelector('.accordion-trigger');
+        const body    = item.querySelector('.accordion-body');
+ 
+        trigger.addEventListener('click', () => {
+          const isOpen = item.classList.contains('open');
+ 
+          // Close all
+          items.forEach(i => {
+            i.classList.remove('open');
+            i.querySelector('.accordion-body').classList.remove('open');
+            i.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false');
+          });
+ 
+          // Open clicked (if it was closed)
+          if (!isOpen) {
+            item.classList.add('open');
+            body.classList.add('open');
+            trigger.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    })();
+
+
+
+
+// restaurant page js end

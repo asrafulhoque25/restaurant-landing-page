@@ -802,6 +802,15 @@ html.lenis, html.lenis body {
 /* marquee end */
 
 
+   .ourwork-wrap{
+            min-height: 416px;
+        }
+        @media (max-width:1200px) {
+            .ourwork-wrap{
+            min-height: 340px;
+        }
+        }
+
 
 
 
@@ -831,4 +840,30 @@ html.lenis, html.lenis body {
     }
 
 
+
+
+       .restaurant-accordion  .accordion-body {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.35s ease;
+    }
+    .restaurant-accordion .accordion-body.open {
+      grid-template-rows: 1fr;
+    }
+    .restaurant-accordion .accordion-body > div {
+      overflow: hidden;
+    }
+ 
+    .restaurant-accordion .accordion-icon {
+      transition: transform 0.35s ease;
+    }
+   .restaurant-accordion  .accordion-item.open .accordion-icon {
+      transform: rotate(45deg);
+    }
+
+
+
+    .restaurent-work-progress{
+        background:#F9F8F6 !important;
+    }
  /* restorant page css end */
