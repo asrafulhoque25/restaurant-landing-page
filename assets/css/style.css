@@ -2559,6 +2559,9 @@ html.lenis, html.lenis body {
   background-image: url('../images/restaurant-price.webp');
   background-size: cover;
 }
+.para-weight p {
+  font-weight: 400 !important;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
