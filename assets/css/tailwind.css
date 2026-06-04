@@ -812,6 +812,66 @@ html.lenis, html.lenis body {
         }
 
 
+        /* Icon slider animation */
+.icon-slider {
+    transform: translateX(-19px);
+    transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.mega-reveal-btn:hover .icon-slider {
+    transform: translateX(20px);
+}
+/* .mega-reveal-btn:hover .icon-circle {
+    background-color: var(--color-green3);
+} */
+
+/* Text animation */
+.t-up,
+.t-down {
+    transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.mega-reveal-btn:hover .t-up,
+.mega-reveal-btn:hover .t-down {
+    transform: translateY(-100%);
+}
+
+@media (max-width:640px) {
+    .mobile-letconnect.mega-reveal-btn{
+        height: 48px !important;
+    }
+    .mega-reveal-btn{
+        height: 52px;
+    }
+}
+
+
+@media (max-width:640px) {
+    .icon-circle{
+        height: 22px !important;
+        width: 22px !important;
+    }
+    .arrow-icon{
+        width: 14px !important;
+        height: 14px !important;
+    }
+    .icon-slider {
+    transform: translateX(-16px);
+    }
+    .mega-reveal-btn:hover .icon-slider {
+    transform: translateX(17px);
+}
+    .mega-reveal-btn .btn-inner {
+    gap: 10px !important;
+}
+}
+
+/* banner section end */
+
+
+
+
+
 
 
 
