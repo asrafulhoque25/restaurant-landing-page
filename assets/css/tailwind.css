@@ -866,4 +866,9 @@ html.lenis, html.lenis body {
     .restaurent-work-progress{
         background:#F9F8F6 !important;
     }
+
+    .price-section{
+        background-image: url('../images/restaurant-price.webp');
+        background-size: cover;
+    }
  /* restorant page css end */
