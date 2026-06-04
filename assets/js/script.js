@@ -1953,4 +1953,26 @@ if (allIndustriesGrid) {
 
 
 
+    //for faq section
+
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const body = item.querySelector('.faq-body');
+    const icon = btn.querySelector('.faq-icon');
+    const isOpen = body.style.maxHeight && body.style.maxHeight !== '0px';
+
+    // close all
+    document.querySelectorAll('.faq-body').forEach(b => b.style.maxHeight = '0px');
+    document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+    // open clicked
+    if (!isOpen) {
+      body.style.maxHeight = body.scrollHeight + 'px';
+      icon.style.transform = 'rotate(45deg)';
+    }
+  });
+});
+
+
 // restaurant page js end
